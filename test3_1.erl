@@ -10,9 +10,9 @@ listCreate(L, Start, End) ->
   end.
 
 sum(N) ->
-  Res = listCreate([], 0, N),
-  io:format("~w~n", [Res]),
-  lists:sum(Res).
+  %Res = listCreate([], 0, N),
+  %io:format("~w~n", [Res]),
+  lists:sum(listCreate([], 0, N)).
 
 sum(Start, End) ->
   lists:sum(listCreate([], Start, End)).
